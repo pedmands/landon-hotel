@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,900);
+
+@include border-box-sizing; /*uses border box sizing like the old IE*/
+
+/*Color Palette*/
+$blue		: #004358;
+$green		: #1F8A70;
+$yellow		: #FFE11A;
+$orange		: #FD7400;
+$red		: #C93C00;
+$pink		: #FF8598;
+$purple		: #730046;
+$dark		: #000;
+$light		: #fff;
+
+$bgColor		: $light;
+$typeColor		: $dark;
+$navBg			: $blue;
+$navForeground	: $light;
+$navHover		: $orange;
+$navBrandBg		: $red;
+$headerSubBg	: $dark;
+
+/*Fonts*/
+$fontfamily: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$thin	: 200;
+$normal	: 400;
+$bold	: 600;
+$heavy	: 900;
+
+$headFont	: $thin 1.5em/1.5em $fontfamily;
+$mainFont	: $thin 1em/1.5em $fontfamily;
+$headColor	: lighten($blue, 20);

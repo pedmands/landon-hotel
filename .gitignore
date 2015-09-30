@@ -1,2 +1,5 @@
-images/
-node_modules/
+builds/**/images/*
+.sass-cache
+node_modules
+.tmp
+.DS_Store

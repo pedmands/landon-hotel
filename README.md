@@ -1,2 +1,2 @@
 # Responsive Single Page Layouts
-This project is for my course Responsive Single Page Layouts. It uses Sass, Compass, Susy 2.0 and shows a variety of techniques including dockable menus, responsive grids, tween and parallax effects, etc.
+This is my project for a single-page responsive site for the famous Landon Hotel in West London. It uses Sass, Compass, Susy 2.0 and a variety of techniques including dockable menus, responsive grids, and tween and parallax effects.

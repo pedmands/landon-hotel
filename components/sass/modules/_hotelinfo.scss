@@ -1,0 +1,32 @@
+#hotelinfo {@include background-image(
+	linear-gradient(
+		$deepGreen, $green
+		));
+
+	color: $light;
+
+	#{headings()} {
+		color: $light;
+	}//headings
+
+	.heading {
+		h1 {
+			font-size: 3em;
+			font-weight: $thin;
+		}//h1
+	}// heading
+
+	#usefulinfo { @include clearfix;
+		section {
+			@include breakpoint($medium) {
+				@include span(1 of 3);	
+			} // breakpoint
+			@include breakpoint(450px $medium) {
+				&.checklist {
+					@include span(1 of 2);
+				}// checklist
+			}// breakpoint
+		}// section
+	}// #usefulinfo
+
+}//#hotelinfo

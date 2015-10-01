@@ -2,43 +2,59 @@ header #nav {
 	@include clearfix;
 	@include background-image(
 		linear-gradient(
-			top, lighten($navBg, 10), $navBg
+			top, lighten($navBg, 5), darken($navBg,5)
 			)//gradient
 		);//background-image
 	width: 100%;
 
-	.navbar {
-		.brand {
+	.navbar { @include container;
+		.brand { @include span(4);
+			@include background-image(
+				linear-gradient(
+					top, $navBrandBg, darken($navBrandBg, 10)
+				)//gradient
+			);//background-image
+
 			float: left;
 			font-weight: $bold;
 			font-family: $headFont;
 			text-align: center;
+
 			text-transform: uppercase;
-			background: $navBrandBg;
+			border-bottom: 4px solid darken($red,15%);
+			height:50px;
 			a {
 				color: $navForeground;
+				@include text-shadow(darken($red, 15%) 0 3px 1px);
 				text-decoration: none;
 				text-align: center;
 				display: inline-block;
 				padding: 10px;
-				font-size: 1.5em;
+				font-size: 1.6em;
+
+				@include breakpoint(max-width $small){
+					font-size: 1.2em;
+					span {display: none;}
+				}//breakpoint max-width $small
 			}//a
 		}//brand
-		ul {
+		ul { @include span(8 at 4 of 12);
 			li {
 				float: left;
 				a {
 					display: inline-block;
 					color: $navForeground;
 					font: $mainFont;
-					font-size: 1em;
+					font-size: 1.1em;
 					padding: 10px 10px 10px 45px;
 					text-decoration: none;
+					margin-bottom:4px;
 
 					//icon styles
 					background-size: 35px;
 					background-repeat: no-repeat;
-					background-position: 2px;
+					background-position-x: 2px;
+					background-position-y: center;
 
 					&.info {background-image: url(../images/icons/info.png);}
 					&.rooms {background-image: url(../images/icons/rooms.png);}
@@ -47,9 +63,25 @@ header #nav {
 					&.attractions {background-image: url(../images/icons/attractions.png);}
 
 					&:hover {
-						background-color: $navHover;
-						color: $light;
-					}
+						border-bottom: 4px solid darken($cream, 50%);
+						background-color: darken($cream, 40%);
+						margin-bottom:0;
+					}//hover
+
+					@include breakpoint(0 $small){
+						padding: 10px 25px;
+						background-position-x: center;
+						&::after {
+							content: '\000a0';
+							display: block;
+							
+						}
+						span {display: none;}
+					}//breakpoint 0 $small
+					@include breakpoint($small $medium){
+						padding-left:10px;
+						&.icon {background-image: none;}
+					}//breakpoint $small $medium
 				}//a
 			}//li
 		}//ul

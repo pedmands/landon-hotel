@@ -1,27 +1,28 @@
 header {
 	.fullheight { @include backImage('../images/hotel/splash_hotelphoto.jpg');
 	
+	
 		.hgroup {
 			padding: 100px 0;
+
 		}// hgroup
 		h1 {
-			color: $red;
+			color: $cream;
 			font-size: 5em;
 			margin-bottom: 15px;
 			@include text-shadow(darken($red, 25%) 0 5px 10px);
 			text-align: center;
 			line-height: .8em;
+			text-transform: uppercase;
 		}//h1
-		h2 {
+		h2 { @include subheader;
 			display: block;
 			color: $light;
-			background: rgba($headerSubBg, .5);
 			width: 60%;
-			max-width: 400px;
+			max-width: 600px;
 			margin: 0 auto;
 			text-align: center;
-			border: 1px solid $light;
-			padding: 10px;
+			font-weight: $thin;
 			font-size: 1.5em;
 		}//h2
 		p {

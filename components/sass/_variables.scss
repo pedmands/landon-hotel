@@ -2,31 +2,48 @@
 
 @include border-box-sizing; /*uses border box sizing like the old IE*/
 
+$susy: (
+	columns: 12,
+	container: 60em,
+	gutters: 1/4,
+	gutter-position: inside
+);
+
+// Breakpoints
+$wide		: 1200px;
+$medium	: 960px;
+$small	: 650px;
+$narrow	: 400px;
+
 /*Color Palette*/
-$blue		: #004358;
+$blue			: #004358;
+$lightBlue  : #046380;
 $green		: #1F8A70;
+$deepGreen	: #002F2F;
 $yellow		: #FFE11A;
 $orange		: #FD7400;
-$red		: #C93C00;
-$pink		: #FF8598;
+$red			: #C93C00;
+$pink			: #FF8598;
 $purple		: #730046;
-$dark		: #000;
+$cream		: #EFECCA;
+$sand			: #E6E2AF;
+$dark			: #000;
 $light		: #fff;
 
-$bgColor		: $light;
+$bgColor			: $light;
 $typeColor		: $dark;
 $navBg			: $blue;
 $navForeground	: $light;
-$navHover		: $green;
+$navHover		: $red;
 $navBrandBg		: $red;
-$headerSubBg	: $dark;
+$headerSubBg	: $blue;
 
 /*Fonts*/
 $fontfamily: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-$thin	: 200;
+$thin		: 200;
 $normal	: 400;
-$bold	: 600;
+$bold		: 600;
 $heavy	: 900;
 
 $headFont	: $thin 1.5em/1.5em $fontfamily;

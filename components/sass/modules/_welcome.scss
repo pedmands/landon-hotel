@@ -1,0 +1,50 @@
+#welcome { @include background-image(linear-gradient(
+	top, $cream, darken($cream,15%)
+	));
+
+	article { @include container(80%);
+		text-align: center;
+		@include breakpoint($small){
+			@include container(70%);
+			padding: 60px 0;
+		}// breakpoint $small
+	}// article
+	h1 {
+		font-weight: $normal;
+		line-height: 100%;
+		color: darken($orange, 25%);
+		padding: 25px 0 0 0;
+		@include breakpoint ($medium){
+			font-size:2.5em;
+		}//breakpoint
+	}//h1
+	p {
+		@include breakpoint ($small){
+			font-size:1.2em;
+			line-height: 1.2em;
+		}//breakpoint
+		@include breakpoint ($medium){
+			font-size:1.5em;
+			line-height: 1.5em;
+		}//breakpoint
+	}// p
+	.gallery {
+		@include clearfix;
+		img {
+			@include border-radius(20%);
+			display: none;
+
+			@include breakpoint($small){
+				@include gallery(1 of 4);
+				display: inline;
+				&.hidesm {display: none;}
+			}//breakpoint
+
+			@include breakpoint($medium){
+				@include gallery(1 of 5);
+				display: inline;
+				&.hidesm {display: inline;}
+			}//breakpoint
+		}// img
+	}// .gallery
+}// #welcome

@@ -18,6 +18,12 @@
 		margin-bottom:200px;
 		background: rgba($light, .8);
 		@include border-radius(10px);
+		p {
+			margin:0;
+		}//p
+		h1 {
+			margin: 10px 0;
+		}
 	}//article
 
 }

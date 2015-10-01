@@ -1,10 +1,12 @@
 #dining {
 	h1, h2 {
 		color: $red;
-		margin-top:0;
+		margin: 10px 0;
 
 	}// headings
-
+	#areadining p {
+		margin-top: 0;
+	}
 	img {
 		width:100%;
 		@include border-radius(10px);

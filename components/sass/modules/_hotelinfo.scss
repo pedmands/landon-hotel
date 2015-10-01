@@ -7,7 +7,11 @@
 
 	#{headings()} {
 		color: $light;
+		margin: 10px 0;
 	}//headings
+	p {
+		margin-top: 0;
+	}
 
 	.heading {
 		h1 {

@@ -8,6 +8,7 @@ body {
 	font: $headFont;
 	color: $headColor;
 	font-weight: $heavy;
+	margin-top:0;
 }
 
 strong {
@@ -17,4 +18,8 @@ strong {
 p {
 	font-weight: $thin;
 	padding-bottom: 10px;
+}
+
+ul {
+	margin:0;
 }

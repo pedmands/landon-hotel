@@ -1,5 +1,5 @@
 #welcome { @include background-image(linear-gradient(
-	top, $cream, darken($cream,15%)
+	top, $cream, darken($cream,6%)
 	));
 
 	article { @include container(80%);

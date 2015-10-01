@@ -13,6 +13,7 @@
 		h1 {
 			font-size: 3em;
 			font-weight: $thin;
+			margin:0;
 		}//h1
 	}// heading
 
@@ -27,6 +28,52 @@
 				}// checklist
 			}// breakpoint
 		}// section
-	}// #usefulinfo
 
+		section#arrivalinfo  {
+			ul {
+				margin-left: 0;
+				padding: 0;
+				list-style: none;
+				li {
+					
+					border-top: 1px solid $light;
+					padding: 15px 0;
+					margin-left: 0;
+					strong {
+						color: $yellow;
+					}//strong
+					&:first-child {
+						border-top: none;
+					}// first-child
+				} // li
+			}// arrivalinfo ul
+		}// arrivalinfo
+		ul {
+			list-style: disc;
+			padding-left:30px;
+		}//usefulinfo ul
+	}// #usefulinfo
+	#greenprogram {
+		background-color: rgba($deepGreen, .5);
+		margin-top: 20px;
+
+		@include breakpoint($medium) {
+			@include background-image(url('../images/misc/greenplanet.png'));
+			background-size: 400px;
+			background-repeat: no-repeat;
+			background-position: 120% center;
+			padding-right: 300px;
+		}//breakpoint
+		@include breakpoint($wide) {
+			background-position: 110% center;
+			padding-right: 350px;
+		}
+		border: 1px solid $light;
+		padding: 20px;
+		@include border-radius(20px);
+	}// #greenprogram
 }//#hotelinfo
+
+
+
+
